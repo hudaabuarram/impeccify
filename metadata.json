@@ -1,0 +1,6 @@
+{
+  "name": "Impeccify Bakery",
+  "description": "A high-fidelity, interactive website for Impeccify Bakery, featuring fresh baked goods, today's special menus, interactive product exploration, story, and booking capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

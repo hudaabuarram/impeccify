@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-rounded: "Fredoka", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  --color-brand-dark: #2A1711;
+  --color-brand-dark-card: #2F1E19;
+  --color-brand-cream: #FCFAF5;
+  --color-brand-cream-dark: #F7F1E5;
+  
+  --color-card-orange: #FCE6C7;
+  --color-card-pink: #FCD5CE;
+  --color-card-blue: #D6ECF0;
+  --color-card-yellow: #FBEFBE;
+  
+  --color-brand-gold: #DF9534;
+  --color-brand-orange: #E66A46;
+  --color-brand-coral: #E66053;
+  --color-brand-brown-light: #503129;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+  font-family: var(--font-sans);
+}
+
+.font-rounded {
+  font-family: var(--font-rounded), sans-serif;
+}
+
+.font-serif-title {
+  font-family: var(--font-serif), serif;
+}
