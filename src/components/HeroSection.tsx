@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Star, ShoppingCart, Sparkles, ChevronRight, Flame, Layers, Award } from 'lucide-react';
 import { moltenCookie, stackedDonuts } from '../data';
@@ -79,6 +79,14 @@ const HERO_ITEMS = [
 export default function HeroSection({ onOrderNowClick }: HeroSectionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const currentItem = HERO_ITEMS[activeIndex];
+
+  // Auto-cycle carousel every 6 seconds. Resets timer on manual user interaction
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % HERO_ITEMS.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [activeIndex]);
 
   return (
     <section id="home" className="py-6 px-4 sm:px-8 max-w-7xl mx-auto">
