@@ -129,7 +129,16 @@ export default function Footer({ onScrollToSection }: FooterProps) {
         {/* Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-[11px] sm:text-xs">
-            © {new Date().getFullYear()} impeccify.com. All rights reserved. Made with love & flour.
+            © 2026 All rights reserved by{' '}
+            <a 
+              href="https://oxa-code-website.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-blue-400 hover:text-blue-300 hover:underline transition-colors font-semibold"
+            >
+              oxa code
+            </a>
+            . Made with love and care.
           </p>
           <div className="flex gap-6 text-[11px] sm:text-xs text-white/40 font-medium">
             <a href="#" className="hover:text-brand-gold transition-colors">Sitemap</a>
